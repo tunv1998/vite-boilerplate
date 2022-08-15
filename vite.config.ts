@@ -9,4 +9,9 @@ export default defineConfig({
   resolve: {
     alias: [{ find: 'src', replacement: path.resolve(__dirname, 'src') }],
   },
+  test: {
+    global: true,
+    enviroment: 'jsdom',
+    setupFiles: ['./src/setupTests.ts'],
+  },
 });
