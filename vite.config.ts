@@ -10,8 +10,8 @@ export default defineConfig({
     alias: [{ find: 'src', replacement: path.resolve(__dirname, 'src') }],
   },
   test: {
-    global: true,
-    enviroment: 'jsdom',
+    globals: true,
+    environment: 'jsdom',
     setupFiles: ['./src/setupTests.ts'],
   },
 });
